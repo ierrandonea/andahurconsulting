@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
-function App() {
+// context provider vvv
+import injectContext from './store/appContext';
+
+// sections vvv
+import Home from './Sections/Home';
+import NotFound from './Sections/NotFound';
+import Contact from './Sections/Contact';
+
+
+// components
+import Navbar from './Components/Navbar';
+
+const App = () => {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <BrowserRouter>
+        <Navbar />
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/contacto" component={Contact} />
+          <Route component={NotFound} />
+        </Switch>
+      </BrowserRouter>
+    </>
   );
 }
 
-export default App;
+export default injectContext(App);
