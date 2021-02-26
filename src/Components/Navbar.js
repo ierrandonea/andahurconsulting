@@ -70,18 +70,18 @@ const Navbar = () => {
               location === "/" ?
                 <Nav
                   className="nav-link"
-                  to="about"
+                  to="consulting"
                   activeClass="selected"
                   spy={true}
                   smooth={true}
                   offset={-110}
-                  duration={2000}>
+                  duration={200}>
                   CONSULTORÍA
                 </Nav>
                 :
                 <Link
                   className="nav-link"
-                  to="/#about">
+                  to="/#consulting">
                   CONSULTORÍA
                 </Link>
             }

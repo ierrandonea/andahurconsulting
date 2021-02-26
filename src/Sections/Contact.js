@@ -3,9 +3,14 @@ import React from 'react';
 const Contact = () => {
     return (
         <section className="jumbotron-fluid card rounded-0 border-0">
-            <img className="card-img" src="https://via.placeholder.com/1920x1080" alt="" />
-            <div className="container pt-5 card-img-overlay">
-                <div className="row pt-5">
+            
+            <picture>
+                <source media="(max-width:767px)" srcset="https://via.placeholder.com/576x1280" />
+                <source media="(max-width:991px)" srcset="https://via.placeholder.com/768x1080" />
+                <img className="img-fluid w-100 card-img" src="https://via.placeholder.com/1920x1280" alt="" />
+            </picture>
+            <div className="container card-img-overlay d-flex flex-column justify-content-end mb-md-5">
+                <div className="row">
                     <div className="col">
                         <h1 className="font-lato">HABLEMOS</h1>
                     </div>
