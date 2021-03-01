@@ -36,9 +36,8 @@ const Services = () => {
                     <div className="col-12 col-lg-6 mb-3">
                         <h4>PMO</h4>
                         <p className="text-justify">
-                            Apoyo a la gestion de los jefes de proyecto, agilizando la comunicacion hacia interesados, creando los reportes de
-                            avace, levantando riesgo, generando mitigaciones.
-                            Facilitador de actividades y enlace con interesados, actualizacion de documentos y lecciones
+                            Apoyo a la gestión de los jefes de proyecto, agilizando la comunicación hacia stakeholders, creando los reportes de avance, matriz de riesgo y mitigaciones.
+                            Facilitador de actividades, actualización de documentos y lecciones aprendidas.
                         </p>
                     </div>
                 </div>
@@ -49,9 +48,21 @@ const Services = () => {
                 </div>
             </div>
             <div className="container-fluid px-0">
-                <div class="row mt-5">
-                    <div className="col">
-                        <hr />
+                <hr />
+                <div class="row justify-content-around">
+                    <div className="col-12 col-md-6 c-pink pl-5">
+                       <span className="pl-lg-5"> 2021 Cecilia Andahur, derechos reservados.</span>
+                    </div>
+                    <div className="col-12 col-md-6 d-flex justify-content-around">
+                        <a href="mailto:cecilia.andahur@gmail.com" target="_blank" className="d-flex align-items-center c-pink">
+                            <i class="fas fa-at"></i> email
+                                </a>
+                        <a href="https://wa.link/og9lbz" target="_blank" className="d-flex align-items-center c-pink mx-3">
+                            <i class="fab fa-whatsapp"></i> whatsaap
+                                </a>
+                        <a href="https://www.linkedin.com/in/cecilia-andahur-del-barrio-48b40a35/" target="_blank" className="d-flex align-items-center c-pink">
+                            <i class="fab fa-linkedin-in"></i> linkedin
+                                </a>
                     </div>
                 </div>
             </div>

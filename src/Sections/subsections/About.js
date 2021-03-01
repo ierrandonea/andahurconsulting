@@ -12,9 +12,9 @@ const About = () => {
                 <div className="row">
                     <div className="col-12 col-lg-4">
                         <picture>
-                            <source media="(max-width:767px)" srcset="https://via.placeholder.com/576x720" />
-                            <source media="(max-width:991px)" srcset="https://via.placeholder.com/768x480" />
-                            <img className="img-fluid w-100 card-img" src="https://via.placeholder.com/480x840" alt="" />
+                            <source media="(max-width:767px)" srcset="/static/cecilia-andahur-consultoria-gestion-proyectos-PMO-mejora-continua-about-2.webp" />
+                            <source media="(max-width:991px)" srcset="/static/cecilia-andahur-consultoria-gestion-proyectos-PMO-mejora-continua-about-3.webp" />
+                            <img className="img-fluid w-100 card-img" src="/static/cecilia-andahur-consultoria-gestion-proyectos-PMO-mejora-continua-about-1.webp" alt="" />
                         </picture>
                     </div>
                     <div className="col-12 col-lg-8 d-flex mt-5 mt-lg-0 flex-column justify-content-between fs-14 text-justify">

@@ -5,9 +5,9 @@ const Banner = () => {
     return (
         <div className="jumbotron jumbotron-fluid p-0 card rounded-0">
             <picture>
-                <source media="(max-width:767px)" srcset="/static/cecilia-andahur-consultoria-project-manager-PMO-mejora-continua-gestion-proyectos-2.jpg" />
-                <source media="(max-width:991px)" srcset="/static/cecilia-andahur-consultoria-project-manager-PMO-mejora-continua-gestion-proyectos-3.jpg" />
-                <img className="img-fluid w-100 card-img" src="/static/cecilia-andahur-consultoria-project-manager-PMO-mejora-continua-gestion-proyectos-1.jpg" alt="" />
+                <source media="(max-width:767px)" srcset="/static/cecilia-andahur-consultoria-project-manager-PMO-mejora-continua-gestion-proyectos-2.webp" />
+                <source media="(max-width:991px)" srcset="/static/cecilia-andahur-consultoria-project-manager-PMO-mejora-continua-gestion-proyectos-3.webp" />
+                <img className="img-fluid w-100 card-img" src="/static/cecilia-andahur-consultoria-project-manager-PMO-mejora-continua-gestion-proyectos-1.webp" alt="" />
             </picture>
             <div className="card-img-overlay d-flex flex-column justify-content-center  ">
                 <div className="card-title">

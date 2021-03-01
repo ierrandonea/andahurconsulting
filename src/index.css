@@ -14,6 +14,27 @@ body {
   color: #2D93AD;
 }
 
+.c-pink {
+  color: #FA8E86 !important;
+}
+
+.c-pink a {
+  color: #FA8E86 !important;
+  text-decoration: none;
+  padding: 20px;
+  background-color: #0B3954;
+}
+
+.c-pink a:hover {
+  color: #FA8E86 !important;
+  text-decoration: none;
+}
+
+.c-pink a:visited {
+  color: #FA8E86 !important;
+  text-decoration: none;
+}
+
 .bg-blue {
   background-color: #2D93AD;
 }
@@ -71,6 +92,7 @@ body {
   border-bottom-left-radius: 0 !important;
   border-bottom-right-radius: 10px !important;
   border-top-right-radius: 0 !important;
+  font-weight: bold !important;
 }
 
 .btn-purple {
@@ -96,7 +118,6 @@ hr {
 #quoted_rectangle {
   position: relative;
 }
-
 #absolute_1, #absolute_2 {
   position: absolute;
 }
