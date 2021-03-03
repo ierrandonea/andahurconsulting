@@ -1,9 +1,7 @@
 import React from 'react';
 import emailjs from 'emailjs-com';
-import{ init } from 'emailjs-com';
 const Contact = () => {
     let media = window.matchMedia('(min-width: 992px)');
-    init("user_4m5W7xCUSUSNmmCSM3UQX");    
     function sendEmail(e) {
         e.preventDefault();
         emailjs.sendForm('gmail', 'template_fj2g1ow', e.target, 'user_4m5W7xCUSUSNmmCSM3UQX')
@@ -48,7 +46,7 @@ const Contact = () => {
                                 </a>
                             </div>
                         </div>
-                        <form>
+                        <form onSubmit={e => sendEmail(e)}>
                             <div className="row">
                                 <div className="col-6 form-group">
                                     <input type="text" className="form-control" name="first_name" placeholder="Nombre" />
