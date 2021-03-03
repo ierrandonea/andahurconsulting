@@ -10,6 +10,7 @@ const Contact = () => {
             }, (error) => {
                 console.log(error.text);
             });
+        e.target.recet();
     }
     return (
         <section className="jumbotron-fluid card rounded-0 border-0">
