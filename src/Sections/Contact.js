@@ -1,11 +1,12 @@
 import React from 'react';
 import emailjs from 'emailjs-com';
-
+import{ init } from 'emailjs-com';
 const Contact = () => {
     let media = window.matchMedia('(min-width: 992px)');
+    init("user_4m5W7xCUSUSNmmCSM3UQX");    
     function sendEmail(e) {
         e.preventDefault();
-        emailjs.sendForm('gmail', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID')
+        emailjs.sendForm('gmail', 'template_fj2g1ow', e.target, 'user_4m5W7xCUSUSNmmCSM3UQX')
             .then((result) => {
                 console.log(result.text);
             }, (error) => {
