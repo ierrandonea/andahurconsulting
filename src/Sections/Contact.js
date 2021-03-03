@@ -1,4 +1,5 @@
 import React from 'react';
+import emailjs from 'emailjs-com';
 
 const Contact = () => {
     let media = window.matchMedia('(min-width: 992px)');
