@@ -3,6 +3,15 @@ import emailjs from 'emailjs-com';
 
 const Contact = () => {
     let media = window.matchMedia('(min-width: 992px)');
+    function sendEmail(e) {
+        e.preventDefault();
+        emailjs.sendForm('gmail', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+    }
     return (
         <section className="jumbotron-fluid card rounded-0 border-0">
             <picture>
@@ -41,25 +50,25 @@ const Contact = () => {
                         <form>
                             <div className="row">
                                 <div className="col-6 form-group">
-                                    <input type="text" className="form-control" id="name" placeholder="Nombre" />
+                                    <input type="text" className="form-control" name="first_name" placeholder="Nombre" />
                                 </div>
                                 <div className="col-6 form-group">
-                                    <input type="text" className="form-control" id="last_name" placeholder="Apellido" />
+                                    <input type="text" className="form-control" name="last_name" placeholder="Apellido" />
                                 </div>
                             </div>
                             <div class="row">
                                 <div className="col form-group">
-                                    <input type="email" className="form-control" id="email" placeholder="Correo electrónico" />
+                                    <input type="email" className="form-control" name="email" placeholder="Correo electrónico" />
                                 </div>
                             </div>
                             <div class="row">
                                 <div className="col form-group">
-                                    <input type="email" className="form-control" id="subject" placeholder="Asunto" />
+                                    <input type="text" className="form-control" name="subject" placeholder="Asunto" />
                                 </div>
                             </div>
                             <div class="row">
                                 <div className="col form-group">
-                                    <textarea className="form-control" id="Message" rows="5" placeholder="Mensaje..."></textarea>
+                                    <textarea className="form-control" name="message" rows="5" placeholder="Mensaje..."></textarea>
                                 </div>
                             </div>
                             <div class="row">
