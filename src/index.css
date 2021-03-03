@@ -133,3 +133,8 @@ hr {
   left: 10px;
   padding: 5px;
 }
+
+.alert-pink {
+  background-color: #FA8E86 !important;
+  color: #000 !important;
+}
