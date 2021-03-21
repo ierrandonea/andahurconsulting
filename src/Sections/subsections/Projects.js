@@ -11,7 +11,7 @@ const Projects = () => {
             description: "A cargo de la creación de matriz de proceso, entrevistas con personal clave para definir roles y responsabilidades. En conjunto con prevencionista de riesgos, se trabaja en identificar mediante entrevistas, reuniones y matrices los procesos involucrados y los riesgos, su prevención y/o mitigación."
         },
         {
-            img: "/static/projects/elecmatic.png",
+            img: "/static/projects/loop-tech.png",
             name: "Loop Technology Chile",
             area: "Servicios Informáticos",
             date: "2019-2020",
@@ -36,20 +36,6 @@ const Projects = () => {
         {
             img: "/static/projects/geodis.png",
             name: "Elecmatic2 Ltda.",
-            area: "Gestión y Procesos",
-            date: "2019-2020",
-            description: "A cargo de la creación de matriz de proceso, entrevistas con personal clave para definir roles y responsabilidades. En conjunto con prevencionista de riesgos, se trabaja en identificar mediante entrevistas, reuniones y matrices los procesos involucrados y los riesgos, su prevención y/o mitigación."
-        },
-        {
-            img: "/static/projects/elecmatic.png",
-            name: "Elecmatic Ltda.",
-            area: "Gestión y Procesos",
-            date: "2019-2020",
-            description: "A cargo de la creación de matriz de proceso, entrevistas con personal clave para definir roles y responsabilidades. En conjunto con prevencionista de riesgos, se trabaja en identificar mediante entrevistas, reuniones y matrices los procesos involucrados y los riesgos, su prevención y/o mitigación."
-        },
-        {
-            img: "/static/projects/elecmatic.png",
-            name: "Elecmatic Ltda.",
             area: "Gestión y Procesos",
             date: "2019-2020",
             description: "A cargo de la creación de matriz de proceso, entrevistas con personal clave para definir roles y responsabilidades. En conjunto con prevencionista de riesgos, se trabaja en identificar mediante entrevistas, reuniones y matrices los procesos involucrados y los riesgos, su prevención y/o mitigación."

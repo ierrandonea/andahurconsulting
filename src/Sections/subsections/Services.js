@@ -55,13 +55,13 @@ const Services = () => {
                     </div>
                     <div className="col-12 col-md-6 d-flex justify-content-around">
                         <a href="mailto:cecilia.andahur@gmail.com" target="_blank" className="d-flex align-items-center c-pink">
-                            <i class="fas fa-at"></i> email
+                            <i class="fas fa-at mr-2"></i> email
                                 </a>
                         <a href="https://wa.link/og9lbz" target="_blank" className="d-flex align-items-center c-pink mx-3">
-                            <i class="fab fa-whatsapp"></i> whatsaap
+                            <i class="fab fa-whatsapp mr-2"></i> whatsaap
                                 </a>
                         <a href="https://www.linkedin.com/in/cecilia-andahur-del-barrio-48b40a35/" target="_blank" className="d-flex align-items-center c-pink">
-                            <i class="fab fa-linkedin-in"></i> linkedin
+                            <i class="fab fa-linkedin-in mr-2"></i> linkedin
                                 </a>
                     </div>
                 </div>

@@ -25,89 +25,111 @@ const Contact = () => {
         }
     }
     return (
-        <section className="jumbotron-fluid card rounded-0 border-0">
-            <picture>
-                <source media="(max-width:767px)" srcset="/static/cecilia-andahur-consultoria-gestion-proyectos-PMO-mejora-continua-contacto-2.webp" />
-                <source media="(max-width:991px)" srcset="/static/cecilia-andahur-consultoria-gestion-proyectos-PMO-mejora-continua-contacto-3.webp" />
-                <img className="img-fluid w-100 card-img" src="/static/cecilia-andahur-consultoria-gestion-proyectos-PMO-mejora-continua-contacto-1.webp" alt="" />
-            </picture>
-            <div className={"container d-flex flex-column justify-content-end" + (media.matches ? " card-img-overlay" : "")}>
-                <div className="row justify-content-lg-end mt-5 mt-lg-0 pl-lg-5">
-                    <div className="col-12 col-lg-6">
-                        <h1 className="font-lato display-4">HABLEMOS</h1>
-                    </div>
-                </div>
-                <div className="row my-3 justify-content-lg-end pl-lg-5">
-                    <div className="col-12 col-lg-6">
-                        <p>
-                            Si lo que viste te resultó interesante y quieres que trabajemos juntos,  puedes contactarme a través de mis redes sociales o completando el formulario a continuación:
-                        </p>
-                    </div>
-                </div>
-                <div className="row pl-lg-5 justify-content-lg-end">
-                    <div className="col-12 col-lg-6 order-1 order-lg-2">
-                        <div className="row pb-4">
-                            <div className="col-12 d-flex justify-content-around">
-                                <a href="mailto:cecilia.andahur@gmail.com" target="_blank" className="btn btn-pink px-3">
-                                    <i className="fas fa-at"></i> email
-                                </a>
-                                <a href="https://wa.link/og9lbz" target="_blank" className="btn btn-pink px-3">
-                                    <i className="fab fa-whatsapp"></i> whatsaap
-                                </a>
-                                <a href="https://www.linkedin.com/in/cecilia-andahur-del-barrio-48b40a35/" target="_blank" className="btn btn-pink px-3">
-                                    <i className="fab fa-linkedin-in"></i> linkedin
-                                </a>
-                            </div>
+        <>
+            <section className="jumbotron-fluid card rounded-0 border-0">
+                <picture>
+                    <source media="(max-width:767px)" srcset="/static/cecilia-andahur-consultoria-gestion-proyectos-PMO-mejora-continua-contacto-2.webp" />
+                    <source media="(max-width:991px)" srcset="/static/cecilia-andahur-consultoria-gestion-proyectos-PMO-mejora-continua-contacto-3.webp" />
+                    <img className="img-fluid w-100 card-img" src="/static/cecilia-andahur-consultoria-gestion-proyectos-PMO-mejora-continua-contacto-1.webp" alt="" />
+                </picture>
+                <div className={"container d-flex flex-column justify-content-end" + (media.matches ? " card-img-overlay" : "")}>
+                    <div className="row justify-content-lg-end mt-5 mt-lg-0 pl-lg-5">
+                        <div className="col-12 col-lg-6">
+                            <h1 className="font-lato display-4">HABLEMOS</h1>
                         </div>
-                        <form onSubmit={e => sendEmail(e)}>
-                            <div className="row">
-                                <div className="col-6 form-group">
-                                    <input type="text" className="form-control" name="first_name" placeholder="Nombre" />
-                                </div>
-                                <div className="col-6 form-group">
-                                    <input type="text" className="form-control" name="last_name" placeholder="Apellido" />
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="col form-group">
-                                    <input type="email" className="form-control" name="email" placeholder="Correo electrónico" />
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="col form-group">
-                                    <input type="text" className="form-control" name="subject" placeholder="Asunto" />
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="col form-group">
-                                    <textarea className="form-control" name="message" rows="5" placeholder="Mensaje..."></textarea>
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="col">
-                                    <button type="submit" className="btn btn-purple">Enviar</button>
+                    </div>
+                    <div className="row my-3 justify-content-lg-end pl-lg-5">
+                        <div className="col-12 col-lg-6">
+                            <p>
+                                Si lo que viste te resultó interesante y quieres que trabajemos juntos,  puedes contactarme a través de mis redes sociales o completando el formulario a continuación:
+                        </p>
+                        </div>
+                    </div>
+                    <div className="row pl-lg-5 justify-content-lg-end">
+                        <div className="col-12 col-lg-6 order-1 order-lg-2">
+                            <div className="row pb-4">
+                                <div className="col-12 d-flex justify-content-around">
+                                    <a href="mailto:cecilia.andahur@gmail.com" target="_blank" className="btn btn-pink px-3">
+                                        <i className="fas fa-at"></i> email
+                                </a>
+                                    <a href="https://wa.link/og9lbz" target="_blank" className="btn btn-pink px-3">
+                                        <i className="fab fa-whatsapp"></i> whatsaap
+                                </a>
+                                    <a href="https://www.linkedin.com/in/cecilia-andahur-del-barrio-48b40a35/" target="_blank" className="btn btn-pink px-3">
+                                        <i className="fab fa-linkedin-in"></i> linkedin
+                                </a>
                                 </div>
                             </div>
-                            {
-                                state == 1 ?
-                                    <div class="row mt-3">
-                                        <div className="col">
-                                            <div class={"alert alert-pink alert-dismissible "+(state==1? "fade show" : "fade hide")} role="alert">
-                                                <strong>Gracias por tu mensaje,</strong> me pondré en contacto cntigo en el menor tiempo posible.
+                            <form onSubmit={e => sendEmail(e)}>
+                                <div className="row">
+                                    <div className="col-6 form-group">
+                                        <input type="text" className="form-control" name="first_name" placeholder="Nombre" />
+                                    </div>
+                                    <div className="col-6 form-group">
+                                        <input type="text" className="form-control" name="last_name" placeholder="Apellido" />
+                                    </div>
+                                </div>
+                                <div className="row">
+                                    <div className="col form-group">
+                                        <input type="email" className="form-control" name="email" placeholder="Correo electrónico" />
+                                    </div>
+                                </div>
+                                <div className="row">
+                                    <div className="col form-group">
+                                        <input type="text" className="form-control" name="subject" placeholder="Asunto" />
+                                    </div>
+                                </div>
+                                <div className="row">
+                                    <div className="col form-group">
+                                        <textarea className="form-control" name="message" rows="5" placeholder="Mensaje..."></textarea>
+                                    </div>
+                                </div>
+                                <div className="row">
+                                    <div className="col">
+                                        <button type="submit" className="btn btn-purple">Enviar</button>
+                                    </div>
+                                </div>
+                                {
+                                    state == 1 ?
+                                        <div class="row mt-3">
+                                            <div className="col">
+                                                <div class={"alert alert-pink alert-dismissible " + (state == 1 ? "fade show" : "fade hide")} role="alert">
+                                                    <strong>Gracias por tu mensaje,</strong> me pondré en contacto cntigo en el menor tiempo posible.
                                                 <button type="button" class="close" onClick={() => setState(0)}>
-                                                    <span aria-hidden="true">&times;</span>
-                                                </button>
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    :
-                                    null
-                            }
-                        </form>
+                                        :
+                                        null
+                                }
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section >
+
+            <div className="container-fluid px-0 pb-3 pt-1 bg-deepblue">
+                <hr />
+                <div class="row justify-content-around">
+                    <div className="col-12 col-md-6 c-pink pl-5">
+                        <span className="pl-lg-5"> 2021 Cecilia Andahur, derechos reservados.</span>
+                    </div>
+                    <div className="col-12 col-md-6 d-flex justify-content-around">
+                        <a href="mailto:cecilia.andahur@gmail.com" target="_blank" className="d-flex align-items-center c-pink">
+                            <i class="fas fa-at mr-2"></i> email
+                        </a>
+                        <a href="https://wa.link/og9lbz" target="_blank" className="d-flex align-items-center c-pink mx-3">
+                            <i class="fab fa-whatsapp mr-2"></i> whatsaap
+                        </a>
+                        <a href="https://www.linkedin.com/in/cecilia-andahur-del-barrio-48b40a35/" target="_blank" className="d-flex align-items-center c-pink">
+                            <i class="fab fa-linkedin-in mr-2"></i> linkedin
+                        </a>
                     </div>
                 </div>
             </div>
-        </section >
+        </>
     )
 }
 

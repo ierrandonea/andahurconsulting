@@ -86,7 +86,7 @@ const Navbar = () => {
                 </Link>
             }
           </li>
-          <li className="nav-item btn btn-pink">
+          <li className="nav-item btn btn-outline-pink">
             <Link
               className="nav-link"
               to="/contacto">
