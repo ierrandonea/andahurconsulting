@@ -82,7 +82,7 @@ const Navbar = () => {
                 <Link
                   className="nav-link"
                   to="/#consulting">
-                  CONSULTORÍA
+                  ROLES CLAVE
                 </Link>
             }
           </li>

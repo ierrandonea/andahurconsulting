@@ -18,9 +18,12 @@ const About = () => {
                         </picture>
                     </div>
                     <div className="col-12 col-lg-8 d-flex mt-5 mt-lg-0 flex-column justify-content-between fs-14 text-justify">
-                        <h5>"Me apasiona liderar equipos hacia metas ambiciosas"</h5>
+                        <h5>"Me apasiona liderar equipos hacia metas ambiciosas"</h5>                        
                         <p className="mt-3 mt-lg-0">
-                            Soy una profesional con amplios conocimientos en implementación de proyectos, durante los más de 15 años de experiencia que tengo en el mercado de prestación de servicios en tecnología, he participado en la implementación de proyecto en sistemas ERP y TI, así como infraestructura y desarrollo.
+                        Ingeniero en Finanzas, de la Universidad Diego Portales. Certificada Scrum Master y DevOps, Auditor interno para el Sistema Integrados de Gestión ISO9001:2015 – ISO14001:2015 ISO 45001:2018 - ISO 27001:2013. Diplomada en gestión de riesgo operacionales. Estudios formales PMP. Idiomas Inglés y Francés
+                        </p>
+                        <p>
+                            Soy una profesional con amplios conocimientos en implementación de proyectos, durante los más de 15 años de experiencia que tengo en el mercado de prestación de servicios en tecnología, he participado en la implementación de proyectos en sistemas ERP y TI, así como infraestructura y desarrollo.
                         </p>
                         <p>
                             Durante mi carrera he tenido la oportunidad de liderar equipos en múltiples niveles de especialización tecnológica, desde grupos técnicos hasta equipos de ingenieros, para la implementación de proyectos de gran envergadura en salas DataCenter de organizaciones bancarias, empresas de telecomunicaciones y empresas de ingeniería de sistemas.
@@ -31,12 +34,9 @@ const About = () => {
                         <p>
                             Mi experiencia y trayectoria me permiten relacionarme de forma directa con todos los stakeholders relacionados a proyectos de implementación tecnológica, de forma tal que cada proyecto alcance su máximo nivel de rendimiento y trazabilidad durante su desarrollo.
                         </p>
-                        <p>
-                            Poseo estudios formales en gestión PMI, certificada como Scrum Master y DevOps. Diplomada en Administración de Riesgos en la Universidad de Chile y Comercio Internacional en la Universidad de Santiago de Chile.
-                        </p>
-                        <div class="row mt-3 mt-lg-0">
+                        <div class="row mt-3 mt-lg-4">
                             <div className="col-12 col-lg-10">
-                                <img className="img-fluid" src="/static/cecilia-andahur-certificaciones.png" alt="" />
+                                <img className="img-fluid" src="/static/cecilia-andahur-certificaciones.webp" alt="" />
 
                             </div>
                         </div>
