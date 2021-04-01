@@ -3,32 +3,39 @@ import React, { useState } from 'react';
 const Projects = () => {
     const projectsNational = [
         {
-            img: "/static/projects/elecmatic.png",
-            name: "Elecmatic Ltda.",
-            area: "Gestión y Procesos",
-            date: "2019-2020",
-            description: "A cargo de la creación de matriz de proceso, entrevistas con personal clave para definir roles y responsabilidades. En conjunto con prevencionista de riesgos, se trabaja en identificar mediante entrevistas, reuniones y matrices los procesos involucrados y los riesgos, su prevención y/o mitigación."
-        },
-        {
             img: "/static/projects/loop-tech.png",
             name: "Loop Technology Chile",
-            area: "Servicios Informáticos",
+            area: "Consultora en Mejora Continua Tecnológica",
             date: "2019-2020",
-            description: "A cargo de la creación de matriz de proceso, entrevistas con personal clave para definir roles y responsabilidades. En conjunto con prevencionista de riesgos, se trabaja en identificar mediante entrevistas, reuniones y matrices los procesos involucrados y los riesgos, su prevención y/o mitigación."
+            description: "Originar y establecer nuevas oportunidades comerciales para la empresa. Coordinación e implementación de proyectos TI y procesos de auditoria ISO 27001. Integrar equipos APM como propuestas de mejoras en clientes."
+        },
+        {
+            img: "/static/projects/elecmatic.png",
+            name: "Elecmatic Ltda.",
+            area: "Líder de Gestión y Procesos",
+            date: "2019-2020",
+            description: "Coordinar y Planificar el proceso de certificación ISO 9001:2015 Iniciando con establecer las tareas de diagnóstico. Establecer y Administrar documentación y procesos internos."
         },
         {
             img: "/static/projects/transbank.png",
             name: "Transbank",
             area: "Project Manager",
             date: "2016-2019",
-            description: "A cargo de la creación de matriz de proceso, entrevistas con personal clave para definir roles y responsabilidades. En conjunto con prevencionista de riesgos, se trabaja en identificar mediante entrevistas, reuniones y matrices los procesos involucrados y los riesgos, su prevención y/o mitigación."
+            description: "Planificación e implementación de proyectos TI. Administración de equipos multidisciplinarios y proveedores. Organización de actividades para cumplimiento de objetivos de proyectos."
         },
         {
             img: "/static/projects/entel.png",
             name: "Entel",
             area: "PMO",
-            date: "2019-2020",
-            description: "A cargo de la creación de matriz de proceso, entrevistas con personal clave para definir roles y responsabilidades. En conjunto con prevencionista de riesgos, se trabaja en identificar mediante entrevistas, reuniones y matrices los procesos involucrados y los riesgos, su prevención y/o mitigación."
+            date: "2011-2012",
+            description: "Consolidación y presentación de reportes de proyecto. Coordinación de actividades de equipo técnico."
+        },        
+        {
+            img: "/static/projects/proyectis.png",
+            name: "Proyectis",
+            area: "Project Manager",
+            date: "2011-2012",
+            description: "Implementación de sistema Banner de Sungard High Education, ERP académico en la Universidad de Playa Ancha"
         }
     ];
     return (
