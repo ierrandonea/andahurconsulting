@@ -50,15 +50,15 @@ const Projects = () => {
                     {
                         !!projectsNational && projectsNational.map((projekt, index) => {
                             return (
-                                <div className="card rounded-lg py-3 my-3" key={index}>
+                                <div className="card rounded-lg p-3 px-md-5 py-4 py-md'3 my-3" key={index}>
                                     <div className="row justify-content-center align-items-center">
-                                        <div className="col-8 col-md-4 mb-3 mb-md-0">
+                                        <div className="col-6 col-md-2 mb-3 mb-md-0">
                                             <img src={projekt.img} alt="" className="img-fluid" />
                                         </div>
-                                        <div className="col-12 col-md-7 d-flex flex-column justify-content-around">
+                                        <div className="col-12 col-md-10 d-flex flex-column justify-content-around">
                                             <div className="card-body">
                                                 <div className="d-flex justify-content-between align-items-center mb-3">
-                                                    <div>
+                                                    <div className="text-justify">
                                                         <h5 className="card-title">{projekt.name}</h5>
                                                         <p className="card-subtitle">{projekt.area}</p>
                                                     </div>

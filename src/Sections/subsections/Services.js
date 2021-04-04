@@ -12,7 +12,7 @@ const Services = () => {
                 </div>
                 <div className="row my-3">
                     <div className="col">
-                        <p className="fs-14">Puedo desempeñarme en múltiples roles clave para ayudar a lograr los objetivos de cada proyecto:</p>
+                        <p className="fs-14">La clave para mejorar los procesos internos de cada organización es tener una alta capacidad de adaptación, junto a habilidades de para negociar y movilizar equipos de trabajo desde el componente humano de cada proyecto. Para estos desafíos, puedo desempeñarme en múltiples roles clave para ayudar a lograr los objetivos de cada proyecto:</p>
                     </div>
                 </div>
                 <div class="row">
