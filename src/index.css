@@ -159,3 +159,7 @@ hr {
   background-color: #FA8E86 !important;
   color: #000 !important;
 }
+
+.disabled {
+  pointer-events: none;
+}

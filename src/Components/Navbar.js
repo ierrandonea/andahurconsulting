@@ -76,7 +76,7 @@ const Navbar = () => {
                   smooth={true}
                   offset={-110}
                   duration={200}>
-                  CONSULTORÍA
+                  ROLES CLAVE
                 </Nav>
                 :
                 <Link

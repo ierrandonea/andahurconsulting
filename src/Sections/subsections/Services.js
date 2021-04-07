@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Services = () => {
     return (
-        <section className="bg-deepblue pt-5 pb-3 mt-5" id="consulting">
+        <section className="bg-deepblue pt-5 pb-3" id="consulting">
             <div className="container text-white text-justify">
                 <div className="row">
                     <div className="col">

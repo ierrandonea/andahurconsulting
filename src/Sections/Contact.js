@@ -17,11 +17,6 @@ const Contact = () => {
             setTimeout(() => {
                 setState(0);
             }, 4000);
-        } else {
-            setState(1);
-            setTimeout(() => {
-                setState(0);
-            }, 2000);
         }
     }
     return (
@@ -63,20 +58,20 @@ const Contact = () => {
                             <form onSubmit={e => sendEmail(e)}>
                                 <div className="row">
                                     <div className="col-6 form-group">
-                                        <input type="text" className="form-control" name="first_name" placeholder="Nombre" />
+                                        <input type="text" className="form-control" name="first_name" placeholder="Nombre" required />
                                     </div>
                                     <div className="col-6 form-group">
-                                        <input type="text" className="form-control" name="last_name" placeholder="Apellido" />
+                                        <input type="text" className="form-control" name="last_name" placeholder="Apellido" required />
                                     </div>
                                 </div>
                                 <div className="row">
                                     <div className="col form-group">
-                                        <input type="email" className="form-control" name="email" placeholder="Correo electrónico" />
+                                        <input type="email" className="form-control" name="email" placeholder="Correo electrónico" required />
                                     </div>
                                 </div>
                                 <div className="row">
                                     <div className="col form-group">
-                                        <input type="text" className="form-control" name="subject" placeholder="Asunto" />
+                                        <input type="text" className="form-control" name="subject" placeholder="Asunto" required />
                                     </div>
                                 </div>
                                 <div className="row">
@@ -95,7 +90,7 @@ const Contact = () => {
                                             <div className="col">
                                                 <div class={"alert alert-pink alert-dismissible " + (state == 1 ? "fade show" : "fade hide")} role="alert">
                                                     <strong>Gracias por tu mensaje,</strong> me pondré en contacto contigo en el menor tiempo posible.
-                                                <button type="button" class="close" onClick={() => setState(0)}>
+                                                    <button type="button" class="close" onClick={() => setState(0)}>
                                                         <span aria-hidden="true">&times;</span>
                                                     </button>
                                                 </div>
