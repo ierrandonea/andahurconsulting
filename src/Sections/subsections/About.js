@@ -6,7 +6,7 @@ const About = () => {
             <div className="container pb-5" id="about">
                 <div className="row pb-5">
                     <div className="col font-lato">
-                        <h1 className="c-blue">CECILIA <span className="c-purple">ANDAHUR</span></h1>
+                        <h1><span className="c-blue fw-400">CECILIA </span><span className="c-purple fw-600">ANDAHUR</span></h1>
                     </div>
                 </div>
                 <div className="row">

@@ -9,13 +9,13 @@ const Navbar = () => {
   const { store } = useContext(Context);
   let location = useLocation().pathname
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow pt-4 px-5">
+    <nav className="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow py-4 px-5">
       <Link className="navbar-brand font-weight-bold" to="/">
         <div>
           <div className="font-lato mb-n2">
             <span className="c-blue fw-400">CECILIA </span><span className="c-purple fw-600">ANDAHUR</span>
           </div>
-          <span className="small text-secondary fs-12">Project Manager</span>
+          <span className="small text-secondary fs-12">Project Manager | PMO | Consultoría en Sistemas de Gestión y Mejora Continua</span>
         </div>
       </Link>
       <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,7 +32,7 @@ const Navbar = () => {
                   activeClass="selected"
                   spy={true}
                   smooth={true}
-                  offset={-120}
+                  offset={-140}
                   duration={200}>
                   SOBRE MÍ
                 </Nav>
@@ -53,7 +53,7 @@ const Navbar = () => {
                   activeClass="selected"
                   spy={true}
                   smooth={true}
-                  offset={-50}
+                  offset={-100}
                   duration={200}>
                   PROYECTOS
                 </Nav>
@@ -74,7 +74,7 @@ const Navbar = () => {
                   activeClass="selected"
                   spy={true}
                   smooth={true}
-                  offset={-110}
+                  offset={-100}
                   duration={200}>
                   ROLES CLAVE
                 </Nav>
@@ -88,7 +88,7 @@ const Navbar = () => {
           </li>
           <li className="nav-item btn btn-outline-pink">
             <Link
-              className="nav-link"
+              className="nav-link p-0"
               to="/contacto">
               HABLEMOS
             </Link>
