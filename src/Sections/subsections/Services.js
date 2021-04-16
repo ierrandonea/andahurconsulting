@@ -12,18 +12,18 @@ const Services = () => {
                 </div>
                 <div className="row my-3">
                     <div className="col">
-                        <p className="fs-14">La clave para mejorar los procesos internos de cada organización es tener una alta capacidad de adaptación, junto a habilidades de para negociar y movilizar equipos de trabajo desde el componente humano de cada proyecto. Para estos desafíos, puedo desempeñarme en múltiples roles clave para ayudar a lograr los objetivos de cada proyecto:</p>
+                        <p className="fs-14">Puedo desempeñarme en múltiples roles clave para ayudar a lograr los objetivos de cada proyecto:</p>
                     </div>
                 </div>
                 <div class="row">
                     <div className="col-12 mb-3">
-                        <h4>Consultoría</h4>
+                        <h4>Consultoría TI</h4>
                         <p>Asesoro en múltiples áreas relacionadas a la gestión de proyectos y sistemas, para proponer mejoras y soluciones frente a carencias. Mi orientación en este ámbito está en entregar nuevas perspectivas que no son parte del “core” del negocio, pero tienen el potencial de mejorar sustancialmente el funcionamiento del mismo.</p>
                     </div>
                     <div className="col-12 mb-3">
                         <h4>Implementación de Proyectos</h4>
                         <p>
-                        Como Project Manager, me he especializado en gestionar equipos de trabajo enfocándome en aprovechar el potencial individual de cada miembro del equipo, de cara a lograr los objetivos de cada proyecto de la mejor forma posible. A través del uso de Metodologías Agile, gestiono células de trabajo especializadas, selección de requisitos, planificación de las iteraciones de desarrollo, ejecución de la iteración, inspección y adaptación.
+                            Como Project Manager, me he especializado en gestionar equipos de trabajo enfocándome en aprovechar el potencial individual de cada miembro del equipo, de cara a lograr los objetivos de cada proyecto de la mejor forma posible. A través del uso de Metodologías Agile, gestiono células de trabajo especializadas, selección de requisitos, planificación de las iteraciones de desarrollo, ejecución de la iteración, inspección y adaptación.
                         </p>
                     </div>
                     <div className="col-12 mb-3">
@@ -33,7 +33,7 @@ const Services = () => {
                     <div className="col-12">
                         <h4>PMO</h4>
                         <p className="text-justify">
-                        Servicio de apoyo y complementación a la gestión de los jefes de proyecto, agilizando los procesos de negociación y comunicación con stakeholders, ya sean clientes internos como externos. A través del desarrollo de estrategias de mitigación y la creación de reportes de avance y matrices de riesgo. Así como también actuar de facilitador de actividades, actualización de documentos y lecciones aprendidas.
+                            Servicio de apoyo y complementación a la gestión de los jefes de proyecto, agilizando los procesos de negociación y comunicación con stakeholders, ya sean clientes internos como externos. A través del desarrollo de estrategias de mitigación y la creación de reportes de avance y matrices de riesgo. Así como también actuar de facilitador de actividades, actualización de documentos y lecciones aprendidas.
                         </p>
                     </div>
                 </div>
@@ -47,7 +47,7 @@ const Services = () => {
                 <hr />
                 <div class="row justify-content-around">
                     <div className="col-12 col-md-6 c-pink pl-5">
-                       <span className="pl-lg-5"> 2021 Cecilia Andahur, derechos reservados.</span>
+                        <span className="pl-lg-5"> 2021 Cecilia Andahur, derechos reservados.</span>
                     </div>
                     <div className="col-12 col-md-6 d-flex justify-content-around">
                         <a href="mailto:cecilia.andahur@gmail.com" target="_blank" className="d-flex align-items-center c-pink">

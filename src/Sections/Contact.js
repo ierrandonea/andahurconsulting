@@ -2,7 +2,25 @@ import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 const Contact = () => {
     let media = window.matchMedia('(min-width: 992px)');
-    const [state, setState] = useState(0);
+    const [state, setState] = useState({
+        firstName: '',
+        lastName: '',
+        subject: '',
+        message: ''
+    });
+    const [confirmation, setConfirmation] = useState(false)
+    const handleChange = e => {
+        const { name, value } = e.target
+        setState({
+            ...state,
+            [name]: value
+        })
+    }
+    const handleValidation = () => {
+        const { firstName, lastName, email, subject, message } = state;
+        if (firstName !== '' && lastName !== '' && email !== '' && subject !== '' && message !== '') return true;
+        return false;
+    }
     function sendEmail(e) {
         e.preventDefault();
         if (!!e.target) {
@@ -12,10 +30,15 @@ const Contact = () => {
                 }, (error) => {
                     console.log(error.text);
                 });
-            e.target.reset();
-            setState(1);
+            setState({
+                firstName: '',
+                lastName: '',
+                subject: '',
+                message: ''
+            })
+            setConfirmation(true)
             setTimeout(() => {
-                setState(0);
+                setConfirmation(false)
             }, 4000);
         }
     }
@@ -58,46 +81,79 @@ const Contact = () => {
                             <form onSubmit={e => sendEmail(e)}>
                                 <div className="row">
                                     <div className="col-6 form-group">
-                                        <input type="text" className="form-control" name="first_name" placeholder="Nombre" required />
+                                        <input
+                                            type="text"
+                                            className="form-control"
+                                            name="firstName"
+                                            value={state.firstName}
+                                            onChange={e => handleChange(e)}
+                                            placeholder="Nombre"
+                                            required />
                                     </div>
                                     <div className="col-6 form-group">
-                                        <input type="text" className="form-control" name="last_name" placeholder="Apellido" required />
+                                        <input
+                                            type="text"
+                                            className="form-control"
+                                            name="lastName"
+                                            value={state.lastName}
+                                            onChange={e => handleChange(e)}
+                                            placeholder="Apellido"
+                                            required />
                                     </div>
                                 </div>
                                 <div className="row">
                                     <div className="col form-group">
-                                        <input type="email" className="form-control" name="email" placeholder="Correo electrónico" required />
+                                        <input
+                                            type="email"
+                                            className="form-control"
+                                            name="email"
+                                            value={state.email}
+                                            onChange={e => handleChange(e)}
+                                            placeholder="Correo electrónico"
+                                            required />
                                     </div>
                                 </div>
                                 <div className="row">
                                     <div className="col form-group">
-                                        <input type="text" className="form-control" name="subject" placeholder="Asunto" required />
+                                        <input
+                                            type="text"
+                                            className="form-control"
+                                            name="subject"
+                                            value={state.subject}
+                                            onChange={e => handleChange(e)}
+                                            placeholder="Asunto"
+                                            required />
                                     </div>
                                 </div>
                                 <div className="row">
                                     <div className="col form-group">
-                                        <textarea className="form-control" name="message" rows="5" placeholder="Mensaje..."></textarea>
+                                        <textarea
+                                            className="form-control"
+                                            name="message"
+                                            rows="5"
+                                            value={state.message}
+                                            onChange={e => handleChange(e)}
+                                            placeholder="Mensaje..."></textarea>
                                     </div>
                                 </div>
                                 <div className="row mb-4 mb-lg-0">
                                     <div className="col">
-                                        <button type="submit" className="btn btn-purple">Enviar</button>
+                                        <button type="submit" className={"btn btn-purple " + (handleValidation() == false ? "disabled" : "")}>Enviar</button>
                                     </div>
                                 </div>
                                 {
-                                    state == 1 ?
+                                    confirmation == true && (
                                         <div class="row mt-3">
                                             <div className="col">
-                                                <div class={"alert alert-pink alert-dismissible " + (state == 1 ? "fade show" : "fade hide")} role="alert">
+                                                <div class={"alert alert-pink alert-dismissible " + (confirmation == true ? "fade show" : "fade hide")} role="alert">
                                                     <strong>Gracias por tu mensaje,</strong> me pondré en contacto contigo en el menor tiempo posible.
                                                     <button type="button" class="close" onClick={() => setState(0)}>
-                                                        <span aria-hidden="true">&times;</span>
+                                                        <span aria-hidden="true" onClick={() => setConfirmation(false)}>&times;</span>
                                                     </button>
                                                 </div>
                                             </div>
                                         </div>
-                                        :
-                                        null
+                                    )
                                 }
                             </form>
                         </div>

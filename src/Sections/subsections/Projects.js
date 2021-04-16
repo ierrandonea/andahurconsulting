@@ -23,7 +23,7 @@ const Projects = () => {
         {
             img: "/static/projects/entel.png",
             name: "Entel",
-            area: "PMO - Gerencia de Tenología",
+            area: "PMO - Gerencia de Tecnología",
             description: ["Planificación de proyectos en base a los objetivos solicitados.", "Organización de las tareas, tiempos y recursos a utilizar para conseguir los objetivos.", "Coordinación de actividades de equipo técnico.", "Seguimiento de proyectos, tareas y actividades dentro de la planificación.", "Evaluación continua de los estados de avance.", "Identificación de brechas entre el estado actual de los proyectos y el estado deseado.", "Consolidación y presentación de reportes de proyecto.", "Generación y presentación de informes de proyecto y trazabilidad.",]
         },
         {
@@ -37,6 +37,12 @@ const Projects = () => {
             name: "Provectis",
             area: "Project Manager",
             description: ["Implementación de sistema Banner de Sungard high Education, ERP académico en la Universidad de Playa Ancha.", "Gestión de equipos técnicos y de consultoría para unificar las expectativas de los usuarios con los requerimientos técnicos y de factibilidad.", "Investigación cualitativa de la utilización que los usuarios le dan a la herramienta.", "Levantamiento de los flujos y procesos llevados a cabo por la áreas para la implementación del ERP.", "Identificación de dolores, expectativas y necesidades de los usuarios.", "Generación de mejoras en la herramienta a partir de la investigación con usuarios.", "Planificación y organización de todos los stakeholders, tanto usuarios, autoridades de la universidad, equipos técnicos y de consultoría.", "Aplicación de pruebas de concepto en distintas áreas de la universidad.", "Coordinación de requerimientos de las distintas facultades.", "Aprobación del correcto funcionamiento del sistema."]
+        },
+        {
+            img: "/static/projects/fusion-partners.gif",
+            name: "Fusion Partners",
+            area: "Project Manager",
+            description: ["Administración de proyecto de transformación digital para Entel, representando a la empresa (Fusion Partners) en los procesos de negociación, reuniones de avance y estado del proyecto frente a mesa directiva Entel.", "Gestión y control de equipos de desarrollo basados en múltiples países, entre ellos Colombia, Honduras, Argentina y Chile.", "Administración de recursos y requerimientos para implementación de CRM Siebel Oracle.", "Coordinación de flujos y  sincronización de etapas de trabajo con equuipos internacioales en pos de establecer un flujo de trabajo continuo.", "Administración de tareas e itineraios de los equipos de cara a cumplir con planificación y mejorar el rendimiento.", "Organizar y evaluar casos de uso para testeo junto a equipo QA."]
         }
     ];
     return (
