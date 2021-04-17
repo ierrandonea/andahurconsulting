@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Projects = () => {
-    const projectsNational = [        
+    const projectsNational = [
         {
             img: "/static/projects/transbank.png",
             name: "Transbank",
@@ -24,7 +25,7 @@ const Projects = () => {
             img: "/static/projects/bancoestado.png",
             name: "Banco Estado",
             area: "Project Manager",
-            description: ["Gestión de equipos de desarrollo de Infraestructura TI del banco.", "Liderar y monitorear el proceso migración de sistemas operativos y de gestión interna a nivel nacional.", "Coordinación de equipos de trabajo ofrecidos por el proveedor (Microsoft) y jefaturas de áreas a migrar dentro de la organización.", "Identificación de oportunidades de mejora continua en procesos y herramientas, además de aplicaciones y productos tecnológicos a migrar.", "Negociación de procesos, tiempos y requerimientos para clientes internos y externos.","Manejo de presupuestos, reportería e informes de control."]
+            description: ["Gestión de equipos de desarrollo de Infraestructura TI del banco.", "Liderar y monitorear el proceso migración de sistemas operativos y de gestión interna a nivel nacional.", "Coordinación de equipos de trabajo ofrecidos por el proveedor (Microsoft) y jefaturas de áreas a migrar dentro de la organización.", "Identificación de oportunidades de mejora continua en procesos y herramientas, además de aplicaciones y productos tecnológicos a migrar.", "Negociación de procesos, tiempos y requerimientos para clientes internos y externos.", "Manejo de presupuestos, reportería e informes de control."]
         },
         {
             img: "/static/projects/entel.png",
@@ -86,6 +87,11 @@ const Projects = () => {
                                 )
                             })
                         }
+                    </div>
+                </div>
+                <div class="row my-4">
+                    <div className="col text-center">
+                        <Link className="btn btn-lg btn-pink py-2 px-4" to="/contacto">Hablemos</Link>
                     </div>
                 </div>
             </div>

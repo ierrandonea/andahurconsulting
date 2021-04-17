@@ -43,6 +43,27 @@ const Navbar = () => {
                   SOBRE MÍ
                 </Link>
             }
+          </li>          
+          <li className="nav-item mr-lg-5">
+            {
+              location === "/" ?
+                <Nav
+                  className="nav-link"
+                  to="consulting"
+                  activeClass="selected"
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={200}>
+                  ROLES CLAVE
+                </Nav>
+                :
+                <Link
+                  className="nav-link"
+                  to="/#consulting">
+                  ROLES CLAVE
+                </Link>
+            }
           </li>
           <li class="nav-item mr-lg-5">
             {
@@ -62,27 +83,6 @@ const Navbar = () => {
                   className="nav-link"
                   to="/#projects">
                   PROYECTOS
-                </Link>
-            }
-          </li>
-          <li className="nav-item mr-lg-5">
-            {
-              location === "/" ?
-                <Nav
-                  className="nav-link"
-                  to="consulting"
-                  activeClass="selected"
-                  spy={true}
-                  smooth={true}
-                  offset={-100}
-                  duration={200}>
-                  ROLES CLAVE
-                </Nav>
-                :
-                <Link
-                  className="nav-link"
-                  to="/#consulting">
-                  ROLES CLAVE
                 </Link>
             }
           </li>

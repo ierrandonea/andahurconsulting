@@ -12,6 +12,7 @@ import Contact from './Sections/Contact';
 
 // components
 import Navbar from './Components/Navbar';
+import Footer from './Components/Footer';
 
 const App = () => {
 
@@ -24,6 +25,7 @@ const App = () => {
           <Route exact path="/contacto" component={Contact} />
           <Route component={NotFound} />
         </Switch>
+        <Footer />
       </BrowserRouter>
     </>
   );

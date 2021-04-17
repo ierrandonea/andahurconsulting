@@ -1,9 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 const Services = () => {
     return (
-        <section className="bg-deepblue pt-5 pb-3" id="consulting">
+        <section className="bg-deepblue py-5 pb-3" id="consulting">
             <div className="container text-white text-justify">
                 <div className="row">
                     <div className="col">
@@ -39,30 +38,6 @@ const Services = () => {
                         <p>
                             <strong className="text-emphasis fw-500">Apoyo</strong> y complemento la gestión de los jefes de proyecto, agilizando los procesos de negociación y comunicación con stakeholders, ofreciendo una nueva perspectiva que ayude a comprender el proyecto y sus implicaciones para sus clientes internos y externos. Desarrollo estrategias de mitigación y matrices de riesgo, facilitando actividades y velando por la actualización de documentos y lecciones aprendidas.
                         </p>
-                    </div>
-                </div>
-                <div class="row my-4">
-                    <div className="col text-center">
-                        <Link className="btn btn-lg btn-pink py-2 px-4" to="/contacto">Hablemos</Link>
-                    </div>
-                </div>
-            </div>
-            <div className="container-fluid">
-                <hr />
-                <div class="row justify-content-around">
-                    <div className="col-12 col-md-6 c-pink pl-5">
-                        <span className="pl-lg-5"> 2021 Cecilia Andahur, derechos reservados.</span>
-                    </div>
-                    <div className="col-12 col-md-6 d-flex justify-content-around">
-                        <a href="mailto:cecilia.andahur@gmail.com" target="_blank" className="d-flex align-items-center c-pink">
-                            <i class="fas fa-at mr-2"></i> Email
-                                </a>
-                        <a href="https://wa.link/og9lbz" target="_blank" className="d-flex align-items-center c-pink mx-3">
-                            <i class="fab fa-whatsapp mr-2"></i> WhatsApp
-                                </a>
-                        <a href="https://www.linkedin.com/in/cecilia-andahur-del-barrio-48b40a35/" target="_blank" className="d-flex align-items-center c-pink">
-                            <i class="fab fa-linkedin-in mr-2"></i> LinkedIn
-                                </a>
                     </div>
                 </div>
             </div>
