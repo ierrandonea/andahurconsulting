@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Roboto+Slab:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Roboto+Slab:wght@300;400;500;600&display=swap');
 body {
   margin: 0;
   font-family: 'Roboto Slab', serif, -apple-system, 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
@@ -49,6 +49,10 @@ body {
 
 .fw-400 {
   font-weight: 400;
+}
+
+.fw-500 {
+  font-weight: 500;
 }
 
 .fw-600 {
@@ -162,4 +166,9 @@ hr {
 
 .disabled {
   pointer-events: none;
+}
+
+.text-emphasis {
+  font-size: 18px;
+  color: #FA8E86;
 }
