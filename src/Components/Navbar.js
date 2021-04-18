@@ -1,12 +1,9 @@
 import React, { useState } from 'react';
-import { useContext } from 'react';
 import { useLocation } from 'react-router-dom';
 import { HashLink as Link } from 'react-router-hash-link';
 import { Link as Nav, animateScroll as scroll } from 'react-scroll';
-import { Context } from '../store/appContext';
 
 const Navbar = () => {
-  const { store } = useContext(Context);
   let location = useLocation().pathname
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow py-4 px-5">
@@ -23,7 +20,7 @@ const Navbar = () => {
       </button>
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav ml-auto d-flex align-items-center font-lato fw-600">
-          <li className={"nav-item mr-lg-5" + (store.activeTabs === "home" ? " active" : "")}>
+          <li className="nav-item mr-lg-5">
             {
               location === "/" ?
                 <Nav

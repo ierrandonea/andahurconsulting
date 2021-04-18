@@ -12,7 +12,7 @@ const Banner = () => {
             <div className="card-img-overlay d-flex flex-column justify-content-center  ">
                 <div className="card-title">
                     <h1>AYUDO A OPTIMIZAR TU ORGANIZACIÓN</h1>
-                    <h5>SISTEMAS DE GESTION - IMPLEMENTACION DE PROYECTOS - PMO - MEJORA CONTINUA</h5>
+                    <h5>Project Manager | PMO | Consultoría en Sistemas de Gestión y Mejora Continua</h5>
                 </div>
             </div>
         </div>
