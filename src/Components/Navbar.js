@@ -8,12 +8,10 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow py-4 px-5">
       <Link className="navbar-brand font-weight-bold" to="/">
-        <div>
-          <div className="font-lato mb-n2">
-            <span className="c-blue fw-400">CECILIA </span><span className="c-purple fw-600">ANDAHUR</span>
-          </div>
-          <span className="small text-secondary fs-12">Project Manager | PMO | Consultoría en Sistemas de Gestión y Mejora Continua</span>
+        <div className="font-lato mb-0">
+          <span className="c-blue fw-400">CECILIA </span><span className="c-purple fw-600">ANDAHUR</span>
         </div>
+        <span className="small text-secondary fs-12 d-none d-xl-flex">Project Manager | PMO | Consultoría en Sistemas de Gestión y Mejora Continua</span>
       </Link>
       <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
@@ -40,7 +38,7 @@ const Navbar = () => {
                   SOBRE MÍ
                 </Link>
             }
-          </li>          
+          </li>
           <li className="nav-item mr-lg-5">
             {
               location === "/" ?
