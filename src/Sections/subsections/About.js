@@ -20,7 +20,7 @@ const About = () => {
                     <div className="col-12 col-lg-8 d-flex mt-5 mt-lg-0 flex-column justify-content-between fs-14 text-justify">
                         <h5>"Hago que las cosas pasen"</h5>
                         <p className="mt-3 mt-lg-0">
-                            Ingeniero en Finanzas, de la Universidad Diego Portales. Certificada Scrum Master y DevOps, Auditor interno para Sistemas Integrados de Gestión ISO9001:2015 – ISO14001:2015 ISO 45001:2018 - ISO 27001:2013. Diplomada en gestión de riesgo operacionales. Estudios formales PMP. Idiomas Inglés y Francés
+                            Ingeniero en Finanzas, de la Universidad Diego Portales. Certificada Scrum Master y DevOps, Auditor interno para Sistemas Integrados de Gestión ISO9001:2015 – ISO14001:2015 ISO 45001:2018 - ISO 27001:2013. Diplomada en gestión de riesgo operacionales. Estudios formales PMP. Idiomas Inglés y Francés.
                         </p>
                         <p>
                             Soy una profesional con amplios conocimientos en implementación de proyectos. Durante los más de 15 años de experiencia que tengo en el mercado de prestación de servicios en tecnología, he participado en la implementación de proyectos en sistemas ERP y TI, así como en infraestructura y desarrollo.
