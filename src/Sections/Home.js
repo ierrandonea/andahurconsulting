@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { lazy } from 'react';
 import Banner from '../Components/Banner';
-import About from './subsections/About';
-import Projects from './subsections/Projects';
-import Quote from './subsections/quote';
-import Services from './subsections/Services';
+const About = lazy(() => import('./subsections/About'));
+const Projects = lazy(() => import('./subsections/Projects'));
+const Quote = lazy(() => import('./subsections/quote'));
+const Services = lazy(() => import('./subsections/Services'));
 
 const Home = () => {
     return (

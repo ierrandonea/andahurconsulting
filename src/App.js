@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 // sections vvv
@@ -9,6 +9,7 @@ import Contact from './Sections/Contact';
 // components
 import Navbar from './Components/Navbar';
 import Footer from './Components/Footer';
+import Fallback from './Components/loading';
 
 const App = () => {
 
@@ -16,11 +17,12 @@ const App = () => {
     <>
       <BrowserRouter>
         <Navbar />
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/contacto" component={Contact} />
-          <Route component={NotFound} />
-        </Switch>
+        <Suspense fallback={Fallback}>
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/contacto" component={Contact} />
+          </Switch>
+        </Suspense>
         <Footer />
       </BrowserRouter>
     </>
