@@ -3,7 +3,6 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 // components
 import Navbar from './Components/Navbar';
-import Footer from './Components/Footer';
 import Fallback from './Components/loading';
 
 // sections vvv
@@ -12,6 +11,9 @@ const Home = lazy(() => import('./Sections/Home'));
 const Contact = lazy(() => import('./Sections/Contact'));
 const Projects = lazy(() => import('./Sections/Projects'));
 const KeyPositions = lazy(() => import('./Sections/KeyPositions'));
+
+// components lazy
+const Footer = lazy(() => import('./Components/Footer'));
 
 
 const App = () => {
