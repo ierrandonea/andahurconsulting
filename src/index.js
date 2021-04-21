@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
+import Fallback from './Components/loading';
 
 // styles vvv
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -14,7 +15,9 @@ import 'bootstrap';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Suspense fallback={Fallback}>
+      <App />
+    </Suspense>
   </React.StrictMode>,
   document.getElementById('root')
 );

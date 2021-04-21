@@ -3,7 +3,6 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 // components
 import Navbar from './Components/Navbar';
-import Fallback from './Components/loading';
 
 // sections vvv
 const Home = lazy(() => import('./Sections/Home'));
@@ -22,14 +21,12 @@ const App = () => {
     <>
       <BrowserRouter>
         <Navbar />
-        <Suspense fallback={Fallback}>
           <Switch>
             <Route exact path="/" component={Home} />
             <Route exact path="/contacto" component={Contact} />
             <Route exact path="/proyectos" component={Projects} />
             <Route exact path="/roles-clave" component={KeyPositions} />
           </Switch>
-        </Suspense>
         <Footer />
       </BrowserRouter>
     </>
