@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link as Nav, animateScroll as scroll } from 'react-scroll';
 
 const Banner = () => {
     return (
@@ -7,7 +6,7 @@ const Banner = () => {
             <picture>
                 <source media="(max-width:767px)" srcset="/static/cecilia-andahur-consultoria-project-manager-PMO-mejora-continua-gestion-proyectos-2.webp" />
                 <source media="(max-width:991px)" srcset="/static/cecilia-andahur-consultoria-project-manager-PMO-mejora-continua-gestion-proyectos-3.webp" />
-                <img className="img-fluid w-100 card-img" src="/static/cecilia-andahur-consultoria-project-manager-PMO-mejora-continua-gestion-proyectos-1.webp" alt="" />
+                <img className="img-fluid w-100 card-img"  src="/static/cecilia-andahur-consultoria-project-manager-PMO-mejora-continua-gestion-proyectos-1.webp" alt="" />
             </picture>
             <div className="card-img-overlay d-flex flex-column justify-content-center  ">
                 <div className="card-title">

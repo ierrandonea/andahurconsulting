@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Services = () => {
     return (
@@ -30,7 +31,7 @@ const Services = () => {
                     <div className="col-12 mb-3">
                         <h4>Sistemas de Gestión</h4>
                         <p>
-                            <strong className="text-emphasis fw-500">Audito</strong> internamente bajo normas ICE/ISO, apoyando al cliente en la mejora de sus procesos, aprovechando al máximo los recursos disponibles y potenciando las labores que se realizan. También gestiono la planificación y ejecución de proyectos para certificaciones, ofreciendo soluciones de diagnóstico y mejora continua.
+                            <strong className="text-emphasis fw-500">Audito</strong> internamente bajo normas IEC/ISO, apoyando al cliente en la mejora de sus procesos, aprovechando al máximo los recursos disponibles y potenciando las labores que se realizan. También gestiono la planificación y ejecución de proyectos para certificaciones, ofreciendo soluciones de diagnóstico y mejora continua.
                         </p>
                     </div>
                     <div className="col-12">
@@ -38,6 +39,11 @@ const Services = () => {
                         <p>
                             <strong className="text-emphasis fw-500">Apoyo</strong> y complemento la gestión de los jefes de proyecto, agilizando los procesos de negociación y comunicación con stakeholders, ofreciendo una nueva perspectiva que ayude a comprender el proyecto y sus implicaciones para sus clientes internos y externos. Desarrollo estrategias de mitigación y matrices de riesgo, facilitando actividades y velando por la actualización de documentos y lecciones aprendidas.
                         </p>
+                    </div>
+                </div>
+                <div class="row my-4">
+                    <div className="col text-center">
+                        <Link className="btn btn-lg btn-pink py-2 px-4" to="/contacto">Hablemos</Link>
                     </div>
                 </div>
             </div>

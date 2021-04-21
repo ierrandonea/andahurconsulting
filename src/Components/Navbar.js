@@ -1,10 +1,7 @@
-import React, { useState } from 'react';
-import { useLocation } from 'react-router-dom';
-import { HashLink as Link } from 'react-router-hash-link';
-import { Link as Nav, animateScroll as scroll } from 'react-scroll';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
-  let location = useLocation().pathname
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow py-4 px-5">
       <Link className="navbar-brand font-weight-bold" to="/">
@@ -19,67 +16,25 @@ const Navbar = () => {
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav ml-auto d-flex align-items-center font-lato fw-600">
           <li className="nav-item mr-lg-5">
-            {
-              location === "/" ?
-                <Nav
-                  className="nav-link mr-l"
-                  to="about"
-                  activeClass="selected"
-                  spy={true}
-                  smooth={true}
-                  offset={-140}
-                  duration={200}>
-                  SOBRE MÍ
-                </Nav>
-                :
-                <Link
-                  className="nav-link"
-                  to="/" >
-                  SOBRE MÍ
-                </Link>
-            }
+            <Link
+              className="nav-link"
+              to="/" >
+              SOBRE MÍ
+            </Link>
           </li>
           <li className="nav-item mr-lg-5">
-            {
-              location === "/" ?
-                <Nav
-                  className="nav-link"
-                  to="consulting"
-                  activeClass="selected"
-                  spy={true}
-                  smooth={true}
-                  offset={-100}
-                  duration={200}>
-                  ROLES CLAVE
-                </Nav>
-                :
-                <Link
-                  className="nav-link"
-                  to="/#consulting">
-                  ROLES CLAVE
+            <Link
+              className="nav-link"
+              to="/roles-clave">
+              ROLES CLAVE
                 </Link>
-            }
           </li>
           <li class="nav-item mr-lg-5">
-            {
-              location === "/" ?
-                <Nav
-                  className="nav-link"
-                  to="projects"
-                  activeClass="selected"
-                  spy={true}
-                  smooth={true}
-                  offset={-100}
-                  duration={200}>
-                  PROYECTOS
-                </Nav>
-                :
-                <Link
-                  className="nav-link"
-                  to="/#projects">
-                  PROYECTOS
-                </Link>
-            }
+            <Link
+              className="nav-link"
+              to="/proyectos">
+              PROYECTOS
+            </Link>
           </li>
           <li className="nav-item btn btn-outline-pink">
             <Link

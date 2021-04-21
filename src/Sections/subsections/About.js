@@ -32,7 +32,7 @@ const About = () => {
                             También he podido desempeñarme como Jefe PMO para control y apoyo de planes y propuestas en mejoras de procesos y administración de equipos, implementación de procesos, evaluaciones en gestión y procesos para aplicación de normas ISO.
                         </p>
                         <p>
-                            Mi experiencia y trayectoria me permiten relacionarme de forma directa con todos los stakeholders relacionados a los procesos de implementación tecnológica, de forma tal que cada proyecto alcance su máximo nivel de rendimiento y trazabilidad durante su desarrollo.
+                            Mi experiencia y trayectoria me permiten relacionarme de forma directa con todos los stakeholders involucrados en los procesos de implementación tecnológica, de forma tal que cada proyecto alcance su máximo nivel de rendimiento y trazabilidad durante su desarrollo.
                         </p>
                         <p>
                             Poseo herramientas clave para mejorar los procesos internos de cada organización, ofreciendo una alta capacidad de adaptación, junto a habilidades para negociar y movilizar equipos de trabajo desde el componente humano de cada proyecto.
